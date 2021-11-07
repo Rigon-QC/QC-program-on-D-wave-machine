@@ -80,7 +80,7 @@ def run_on_qpu(Q, sampler):
     print(f"chain_strength = {chainstrength}")
     print(f"number of runs = {numruns}\n")
     
-    sample_set = sampler.sample_qubo(Q, chain_strength=chainstrength, num_reads=numruns, label='Training - Number Partitioning')
+    sample_set = sampler.sample_qubo(Q, chain_strength=chainstrength, num_reads=numruns, label='TestNumberPartitioning')
 
     return sample_set
 
@@ -89,7 +89,7 @@ def run_on_qpu(Q, sampler):
 if __name__ == "__main__":
 
     ## ------- Set up our list of numbers -------
-    S = [25, 7, 13, 31, 42, 17, 21, 10]
+    S = [25, 7, 13, 31, 42, 17, 21, 10, 19, 15]
 
     ## ------- Set up our QUBO dictionary -------
 
